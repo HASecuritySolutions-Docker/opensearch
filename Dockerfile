@@ -1,4 +1,4 @@
-FROM opensearchproject/opensearch:1.0.0
+FROM opensearchproject/opensearch:1.0.1
 
 MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
