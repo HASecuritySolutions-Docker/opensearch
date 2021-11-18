@@ -6,8 +6,7 @@ USER root
 
 COPY expect.sh /tmp/expect.sh
 
-RUN yum install nc -y && \
-    /root/expect.sh
+RUN yum install nc expect -y
 
 USER opensearch
 
