@@ -4,11 +4,15 @@ MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
 USER root
 
-RUN yum install nc -y
+COPY expect.sh /tmp/expect.sh
+
+RUN yum install nc -y && \
+    /root/expect.sh
 
 USER opensearch
 
 RUN rm -f /usr/share/opensearch/config/esnode* && \
     rm -f /usr/share/opensearch/config/kirk* && \
     chmod 0700 /usr/share/opensearch/config/log4j2.properties && \
-    chmod 0700 /usr/share/opensearch/config
+    chmod 0700 /usr/share/opensearch/config && \
+    /tmp/expect.sh
