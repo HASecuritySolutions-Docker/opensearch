@@ -1,5 +1,4 @@
 FROM opensearchproject/opensearch:2.5.0
-ARG TARGETARCH
 
 MAINTAINER Justin Henderson justin@hasecuritysolutions.com
 
