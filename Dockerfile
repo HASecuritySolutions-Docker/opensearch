@@ -1,6 +1,6 @@
 FROM opensearchproject/opensearch:2.5.0
 
-MAINTAINER Justin Henderson info@hasecuritysolutions.com
+MAINTAINER Justin Henderson jhenderson@hasecuritysolutions.com
 
 USER root
 
