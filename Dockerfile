@@ -13,4 +13,3 @@ RUN rm -f /usr/share/opensearch/config/esnode* && \
     chmod 0700 /usr/share/opensearch/config/log4j2.properties && \
     chmod 0700 /usr/share/opensearch/config && \
     /usr/share/opensearch/bin/opensearch-plugin install repository-s3
-    #/usr/share/opensearch/bin/opensearch-plugin install --batch repository-s3
