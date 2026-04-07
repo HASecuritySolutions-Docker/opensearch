@@ -1,4 +1,4 @@
-FROM opensearchproject/opensearch:3.4.0
+FROM opensearchproject/opensearch:3.5.0
 MAINTAINER Justin Henderson jhenderson@hasecuritysolutions.com
 
 USER root
